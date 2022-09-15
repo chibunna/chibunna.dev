@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/87d4317d3e.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap -->
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            count = 0;
+            wordsArray = ["a Software Engineer🔨", "a Data Analyst📈", "a Security Engineer👨🏾‍💻", "a Pentester🔐"];
+            setInterval(function () {
+                count++;
+                $("#word").fadeOut(400, function () {
+                    $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+                });
+            }, 2000);
+        });
+    </script>
+
+    <title>Home | Chibunna.dev</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav nav-container">
+            <a href="" class="nav__logo"><img src="assets/img/profilePhoto.jpg" alt="" class="header--img"></a>
+
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class="uil uil-blogger-alt nav__icon"></i>Blog
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="close">
+                    <!-- <i class="uil uil-times nav__close" id="nav-close"></i> -->
+                    <i class="uil uil-times-square nav__close" id="nav-close"></i>
+                </div>
+
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
+                <div class="nav__toggle" id="nav-toggle">
+
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__img">
+                        <img src="assets/img/vector.jpg" alt="" class="home--img">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hello, I'm Chibunna</h1>
+                        <h1 class="home__titleII">Hello, <br> I'm Chibunna</h1>
+                        <h3 class="home__subtitle">I am <span id="word"></span></h3>
+                        <h3 class="home__subtitleII">I am <br><span id="word"></span></h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Projects</h2>
+            <!-- <span class="section__subtitle"></span> -->
+
+            <div class="services__container container grid">
+
+
+                <!-- Services 2 -->
+                <a href="https://github.com/chibunna/Update-Tool" class="github">
+                    <div class="services__content">
+                        <div>
+                            <h4 class="services__title">update</h4>
+                        </div>
+
+                        <span class="">
+                            A macOS & homebrew software download, update, & upgrade utility. Written in Bash.
+                            <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Services 3 -->
+                <a href="https://github.com/chibunna/Jutebox-Appp" class="github">
+                    <div class="services__content">
+                        <div>
+                            <h4 class="services__title">jukebox</h4>
+                        </div>
+
+                        <span class="">
+                            A virtual simulation of a music player (as Windows Media Player / iTunes). Written in Java.
+                            SQL
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Services 4 -->
+                <a href="https://github.com/chibunna/lyricsanalyzer" class="github">
+                    <div class="services__content">
+                        <div>
+                            <h4 class="services__title">lyricsfinder</h4>
+                        </div>
+
+                        <span class="">
+                            A React application that finds song lyrics using the MusixMatch API. Refactored with React
+                            Hooks
+                            <!-- <i class="uil uil-arrow-right button__icon"></i> -->
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Services 5 -->
+                <a href="https://github.com/chibunna/Red-Teaming-Toolkit" class="github">
+                    <div class="services__content">
+                        <div>
+                            <h4 class="services__title">red-teaming-toolkit</h4>
+                        </div>
+
+                        <span class="">
+                            A collection of open source and commercial tools that aid in red team pentesting operations.
+
+                    </div>
+                </a>
+                <!-- Services 6 -->
+                <a href="https://github.com/chibunna/coursework_mobile" class="github">
+                    <div class="services__content">
+                        <div>
+                            <h4 class="services__title">madDiscovery</h4>
+                        </div>
+
+                        <span class="">
+                            An event registration applications for community events, festivals etc. Written in Java.
+                        </span>
+                    </div>
+                </a>
+                <!-- Services 1 -->
+                <!-- <a href="https://google.com" class="github">
+                <div class="services__content">
+                    <div>
+                        <h4 class="services__title">asyncify</h4>
+                    </div>
+
+                    <span class="">
+                        A function that runs synchronous PHP functions asynchronously
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                </div>
+                </a> -->
+
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualifications</h2>
+
+            <div class="qualifications__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#work'>
+
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- Work Experience 1 -->
+                    <div class="qualification__content qualification__active" data-content id="work">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Data Analyst</h3>
+                                <span class="qualification__subtitle">Brij Money</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - Present
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Software Developer</h3>
+                                <span class="qualification__subtitle">Framtid Solutions Ltd</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2020
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Web Developer</h3>
+                                <span class="qualification__subtitle">Solidaridad West Africa</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2016
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Education -->
+                    <div class="qualification__content" data-content id="education">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">United States International University</h3>
+                                <span class="qualification__subtitle">BSc. Information Systems & Technology</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2015-2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">United States International University</h3>
+                                <span class="qualification__subtitle">MSc. Information Systems Management</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 - Present
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== PROJECT IN MIND ====================-->
+
+        <section class="work section" id="work">
+            <div class="work__container container grid">
+                <div class="columns">
+                    <div class="column__img">
+                        <img src="/assets/img/vector.jpg" alt="" class="work__img">
+                    </div>
+                    <div class="column__text">
+                        <h3 class="section__title if">Have a project? Let's work together!</h3>
+                        <p class="section__subtitle">
+                            I am also a cybersecurity graduate with hundreds of classroom hours in cloud safety,
+                            automation, and digital forensics. Seeking to leverage newly-minted top secret security
+                            clearance to become the next network security engineer.
+                        </p>
+                        <p id="space"></p>
+                        <p class="section__subtitle">I strive to deliver high-quality opensource and bespoke software. I
+                            have a repertoire inclusive of Computer Programming, and Technical Writing.
+                            I can develop and ship software authored in any one or an amalgam of Java, C++, or
+                            JavaScript.</p>
+                        <div class="resume">
+                            <a href="http://chibunna.github.io/Digital-Resume/" target="_blank" class="anchor">
+                                <h4 class="section__subtitle resume">Check out my resume
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__img">
+                    <div>
+                    <img src="/assets/img/programmer.jpg" alt="" class="work__img">
+                </div>
+                </div>
+                <form action="https://formsubmit.co/5a912ba47b96f7ec8aa39aefcf1c4aef" method="POST" name="form"
+                    class="contact__form grid">
+                    <div class="contact__input grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name </label>
+                            <input type="text" id="name" name="name" class="contact__input" placeholder="John Doe"
+                                required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email </label>
+                            <input type="text" id="email" name="email" class="contact__input"
+                                placeholder="jdoe@duck.com" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Subject </label>
+                            <input type="text" id="message" name="subject" class="contact__input"
+                                placeholder="Web application" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message </label>
+                            <textarea class="contact__input" name="message" id="" cols="0" rows="5"
+                                placeholder="Hello, Chibunna..." required></textarea>
+                        </div>
+                        <div class="message">
+
+                            <button type="submit" class="section__subtitle msg__button">Send message</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- <div class="container my-5"> -->
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <!-- <div class="container p-4 pb-0"> -->
+        <!-- Section: Social media -->
+        <!-- <section class="mb-1">
+
+                Twitter
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                    role="button"><i class="fab fa-twitter"></i></a>
+
+                Linkedin
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!"
+                    role="button"><i class="fab fa-linkedin-in"></i></a>
+                Github
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
+                    role="button"><i class="fab fa-github"></i></a>
+
+                Google
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                    role="button"><i class="fab fa-google"></i></a>
+
+
+            </section> -->
+        <!-- Section: Social media -->
+        <!-- </div> -->
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <section class="mb-1">
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;"
+                    href="https://twitter.com/chibunnna" target="_blank" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;"
+                    href="https://www.linkedin.com/in/chibunna/" target="_blank" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <!-- Github -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;"
+                    href="https://github.com/chibunna" target="_blank" role="button"><i class="fab fa-github"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;"
+                    href="https://gmail.com/chibunna@duck.com" target="_blank" role="button"><i
+                        class="fab fa-google"></i></a>
+
+
+            </section>
+            © Chukwudebelu Chibunna 2022.
+            <a class="text-white">All rights reserved</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scroll__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
